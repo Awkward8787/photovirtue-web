@@ -44,3 +44,19 @@ Public. Early codebase. Payment and deploy wiring are not finished in-repo.
 ## License
 
 All rights reserved. Original IP by Anthony Jones.
+
+## Download
+
+Source archives are published on the [Releases page](https://github.com/Awkward8787/photovirtue-web/releases); the latest release carries `photovirtue-web-v0.1.0.zip`.
+
+### Install & run
+```bash
+unzip photovirtue-web-v0.1.0.zip
+cd photovirtue-web
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python telegram_bot.py   # Telegram bot (long polling)
+python web_editor.py     # browser photo editor (uvicorn on http://localhost:8000)
+```
+See `AGENTS.md` for development rules.
