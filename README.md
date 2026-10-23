@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="PhotoVirtue" width="100%">
+  <img src="assets/banner.png" alt="PhotoVirtue" width="100%">
 </p>
 
 # PhotoVirtue
@@ -12,6 +12,21 @@
 ![Telegram](https://img.shields.io/badge/Telegram-26A5E4&logo=telegram&logoColor=white)
 
 Original IP by Anthony Jones. Python stack: Telegram bot (`telegram_bot.py`), FastAPI web editor (`web_editor.py`), and a Tkinter desktop editor (`photo_virtue.py`).
+
+
+## How it works
+
+```mermaid
+flowchart LR
+  U[User] --> TG[Telegram bot]
+  TG --> BTC[Bitcoin one-time payment]
+  BTC --> Access[1-year access]
+  Access --> Web[FastAPI web editor]
+  Web --> Local[Local PIL filters]
+  Web --> AC[ArtCraft / providers]
+```
+
+Python stack: `telegram_bot.py` for BTC-provisioned access, `web_editor.py` FastAPI editor with local PIL and optional ArtCraft providers.
 
 ## Features
 
