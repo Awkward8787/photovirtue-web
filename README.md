@@ -1,9 +1,46 @@
+<p align="center">
+  <img src="docs/banner.png" alt="PhotoVirtue" width="100%">
+</p>
+
 # PhotoVirtue
 
-Telegram bot + browser photo editor.
+**Telegram bot and browser photo editor with Bitcoin one-time payments for 1-year access.**
 
-Bitcoin one-time payments for 1-year access.
+[![License: All Rights Reserved](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)](#license)
+![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688&logo=fastapi&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-26A5E4&logo=telegram&logoColor=white)
 
-See AGENTS.md for development rules.
+Original IP by Anthony Jones. Python stack: Telegram bot (`telegram_bot.py`), FastAPI web editor (`web_editor.py`), and a Tkinter desktop editor (`photo_virtue.py`).
 
-Original IP by Anthony Jones.
+## Features
+
+- Telegram bot entry for paid access
+- Browser photo editor (FastAPI + Pillow)
+- Desktop Tkinter editor with layers/filters concepts
+- Bitcoin one-time payment model described in project docs ($19/year access)
+
+## Tech stack
+
+- Python 3
+- python-telegram-bot / FastAPI / uvicorn
+- Pillow
+- Tkinter (desktop editor)
+
+## How to run
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+See `AGENTS.md` for development rules. Bot and editor entrypoints are `telegram_bot.py` and `web_editor.py`.
+
+## Status
+
+Public. Early codebase. Payment and deploy wiring are not finished in-repo.
+
+## License
+
+All rights reserved. Original IP by Anthony Jones.
